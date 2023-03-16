@@ -19,12 +19,11 @@ box.forEach(box => {
 
 const btn = document.querySelectorAll('.dot');
 
-btn[offset].classList.add('active');
-box[offset].classList.add('active_box');
-
 function refresh() {
     boxes.style.paddingLeft = defaultWidth + "px";
     boxes.style.transform = `translateX(-${(box[0].offsetWidth + 30) * offset}px)`;
+    btn[offset].classList.add('active');
+    box[offset].classList.add('active_box');
 }
 
 refresh();
@@ -35,7 +34,13 @@ btn.forEach((item, i) => {
         box.forEach(bt => bt.classList.remove('active_box'))
         offset = i;
         refresh();
-        btn[i].classList.add('active');
-        box[i].classList.add('active_box');
     })
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight' && offset < box.length - 1) offset++
+    if (event.key === 'ArrowLeft' && offset > 0) offset--
+    btn.forEach(bt => bt.classList.remove('active'))
+    box.forEach(bt => bt.classList.remove('active_box'))
+    refresh();
 })
