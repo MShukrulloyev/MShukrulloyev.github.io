@@ -1,27 +1,33 @@
 const boxes = document.querySelector('.boxes'),
     wrapper = document.querySelector('.wrapper'),
     box = document.querySelectorAll('.box'),
-    width = window.getComputedStyle(wrapper).width,
+    width = document.querySelector('.main_container').offsetWidth,
     parent = document.querySelector('.dots');
 
-let offset = 1,
-    defaultWidth = ((window.innerWidth / 2) - (box[0].offsetWidth / 2)) * 1;
+let offset = 1, defaultWidth, itemWidth, boxesWidth;
+if (window.outerWidth <= 568) {
+    defaultWidth = 0;
+    itemWidth = wrapper.offsetWidth;
+    boxesWidth = (itemWidth + 30);
+} else {
+    defaultWidth = ((width / 2) - (box[0].offsetWidth / 2)) * 1;
+    boxesWidth = (box[0].offsetWidth + 30);
+}
 
-boxes.style.width = 100 * box.length + "%";
-
-box.forEach(box => {
-    box.style.width = width + "px";
-
+box.forEach(item => {
+    item.style.width = itemWidth + "px";
     const div = document.createElement('div');
     div.className = 'dot';
     parent.append(div);
 });
 
+boxes.style.width = box[0].offsetWidth * box.length + "%";
+
 const btn = document.querySelectorAll('.dot');
 
 function refresh() {
     boxes.style.paddingLeft = defaultWidth + "px";
-    boxes.style.transform = `translateX(-${(box[0].offsetWidth + 30) * offset}px)`;
+    boxes.style.transform = `translateX(-${boxesWidth * offset}px)`;
     btn[offset].classList.add('active');
     box[offset].classList.add('active_box');
 }
