@@ -633,9 +633,9 @@ nav li a {
     .section2 form {
         width: 100%;
         margin-top: 32px;
-        flex-direction: row;
-        align-items: center;
-        flex-flow: row wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
     }
 
     .inp {
@@ -692,7 +692,7 @@ nav li a {
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 624px) {
     .head {
         flex-direction: column;
         padding-top: 40px;
@@ -839,7 +839,7 @@ nav li a {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 505px) {
     nav {
         padding: 0 20px;
     }

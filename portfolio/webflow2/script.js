@@ -5,7 +5,7 @@ const boxes = document.querySelector('.boxes'),
     parent = document.querySelector('.dots');
 
 let offset = 1, defaultWidth, itemWidth, boxesWidth;
-if (window.outerWidth <= 568) {
+if (window.outerWidth <= 624) {
     defaultWidth = 0;
     itemWidth = wrapper.offsetWidth;
     boxesWidth = (itemWidth + 30);
