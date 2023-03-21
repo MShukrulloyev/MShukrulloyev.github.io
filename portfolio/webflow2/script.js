@@ -29,7 +29,6 @@ const btn = document.querySelectorAll('.dot');
 function refreshDate() {
     wrapper.style.padding = `0 ${defaultWidth}px`;
     wrapper.scrollLeft = boxesWidth * offset;
-    console.log(boxesWidth)
     btn[offset].classList.add('active');
     box[offset].classList.add('active_box');
 }
@@ -91,4 +90,5 @@ window.addEventListener('mouseover', () => {
     onDeleteActive();
     btn[offset].classList.add('active');
     box[offset].classList.add('active_box');
+    console.log(1);
 })
