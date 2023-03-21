@@ -337,19 +337,6 @@ nav li a {
     margin: 20px auto 0;
 }
 
-.box {
-    width: 540px;
-    border: 1px solid var(--light-gray);
-    border-radius: 8px;
-    padding: 30px 30px 40px 30px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.active_box {
-    border: 1px solid var(--blue);
-}
-
 .pqdj {
     margin-left: 30px;
 }
@@ -379,20 +366,31 @@ nav li a {
     gap: 10px;
 }
 
+/* slider */
+
 .slider {
     margin-top: 60px;
 }
 
 .wrapper {
+    display: flex;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: x;
+    cursor: grab;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    /* for chrome */
+    display: none;
 }
 
 .boxes {
     width: 300%;
     display: flex;
     gap: 30px;
-    /* padding-left: 226px; */
     transition: all .5s;
 }
 
@@ -409,6 +407,23 @@ nav li a {
     border-radius: 50%;
     background-color: var(--light-gray);
 }
+
+.box {
+    width: 540px;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 30px 30px 40px 30px;
+    display: flex;
+    align-items: flex-start;
+    scroll-snap-align: center;
+    user-select: none;
+}
+
+.active_box {
+    border: 1px solid var(--blue);
+}
+
+/* slider end */
 
 .section5 {
     padding: 100px 0;
