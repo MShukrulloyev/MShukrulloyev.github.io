@@ -1,34 +1,44 @@
-const boxes = document.querySelector('.boxes'),
-    wrapper = document.querySelector('.wrapper'),
+const wrapper = document.querySelector('.wrapper'),
     box = document.querySelectorAll('.box'),
     width = document.querySelector('.main_container').offsetWidth,
     parent = document.querySelector('.dots');
 
-let offset = 1, defaultWidth, itemWidth, boxesWidth;
+let offset = 1, defaultWidth, itemWidth, boxesWidth, d;
+
+setInterval(() => {
+    if (offset === box.length - 1) {
+        offset = 0;
+    } else {
+        offset++;
+    }
+    onDeleteActive();
+    refreshDate();
+}, 5000)
 
 if (window.outerWidth <= 624) {
     defaultWidth = 0;
     itemWidth = wrapper.offsetWidth;
     boxesWidth = itemWidth;
+    d = 0;
 } else {
     defaultWidth = (width / 2) - (box[0].offsetWidth / 2);
-    boxesWidth = box[0].offsetWidth - 20;
+    boxesWidth = box[0].offsetWidth;
+    d = 30;
 }
 
 box.forEach(item => {
-    item.style.width = itemWidth + "px";
+    item.style.minWidth = itemWidth + "px";
     const div = document.createElement('div');
     div.className = 'dot';
     parent.append(div);
 });
 
-boxes.style.width = box[0].offsetWidth * box.length + "%";
-
 const btn = document.querySelectorAll('.dot');
 
+wrapper.style.padding = `0 ${defaultWidth}px`;
+
 function refreshDate() {
-    wrapper.style.padding = `0 ${defaultWidth}px`;
-    wrapper.scrollLeft = boxesWidth * offset;
+    wrapper.scrollLeft = (boxesWidth * offset) - d;
     btn[offset].classList.add('active');
     box[offset].classList.add('active_box');
 }
@@ -84,11 +94,9 @@ wrapper.addEventListener('mousemove', function (e) {
     this.scrollLeft += startX - e.clientX;
 })
 
-window.addEventListener('mouseover', () => {
-    // -- for dot
-    box.forEach((item, i) => item.offsetLeft <= wrapper.scrollLeft + box[0].offsetLeft ? offset = i : null)
+wrapper.addEventListener('scroll', () => {
+    box.forEach((item, i) => item.offsetLeft <= wrapper.scrollLeft + box[0].offsetLeft ? offset = i : null);
     onDeleteActive();
     btn[offset].classList.add('active');
     box[offset].classList.add('active_box');
-    console.log(1);
 })

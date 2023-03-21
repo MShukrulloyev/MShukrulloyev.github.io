@@ -375,23 +375,28 @@ nav li a {
 .wrapper {
     display: flex;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-snap-type: x;
     cursor: grab;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    gap: 30px;
 }
 
-.wrapper::-webkit-scrollbar {
-    /* for chrome */
-    display: none;
+.box>img {
+    width:80px;
 }
 
-.boxes {
+/* .boxes {
     width: 300%;
     display: flex;
     gap: 30px;
     transition: all .5s;
+} */
+
+.wrapper::-webkit-scrollbar {
+    /* for chrome */
+    display: none;
 }
 
 .dots {
@@ -409,12 +414,12 @@ nav li a {
 }
 
 .box {
-    width: 540px;
+    min-width: 540px;
     border: 1px solid var(--light-gray);
     border-radius: 8px;
     padding: 30px 30px 40px 30px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex;
     scroll-snap-align: center;
     user-select: none;
 }
@@ -1090,7 +1095,7 @@ nav li a {
     .footer_btns {
         margin-top: 22px;
         gap: 14px;
-        margin-top: ;
+        /* margin-top: ; */
     }
 }
 
