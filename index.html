@@ -3,15 +3,624 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Responsive portfolio website Muhammadali - Freelancer</title>
 </head>
 
 <body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Muhammadali
+            </a>
 
-    123
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-5-line"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-image-line"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
 
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I'm Muhammadali <br>
+                        Frontend Developer <br>
+                        Based In Uzbekistan <br>
+                    </h1>
+
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="assets/img/perfil.png" alt="home perfil">
+                        </div>
+
+                        <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                        <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
+                    </div>
+
+                    <ul class="home__social">
+                        <a href="https://t.me/mshukrulloyev" target="_blank" class="home__social-link">
+                            <i class="ri-telegram-line"></i>
+                        </a>
+                        <a href="https://github.com/mshukrulloyev" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="#contact" class="home__social-link">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            BIOGRAPHY
+                        </h3>
+
+                        <p class="home__info-description">
+                            Hi, I'm Muhammadali, Frontend Developer.
+                            Passionate about designing beautiful web
+                            interfaces. Based in Uzbekistan.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+
+                        <p class="home__info-description">
+                            Uzbekistan, Samarkand <br>
+                            mshukrulloyev2021@gmail.com <br>
+                            +998 904690506
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            SERVICES
+                        </h3>
+
+                        <p class="home__info-description">
+                            Frontend Developer
+                        </p>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+
+                        <p class="home__info-number">
+                            02+
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+
+                        <p class="home__info-number">
+                            10+
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPANIES WORKED
+                        </h3>
+
+                        <p class="home__info-number">
+                            02+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My favorite skills</span>
+
+            <div class="skills__container container grid section__border">
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Frontend Developer
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/html-1.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/css-3.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/logo-javascript.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/react-2.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/logo-github.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-pantone-line"></i> Additional Skills
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/figma-1.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">Figma</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/adobe-photoshop-2.svg" alt="skills img">
+                            </div>
+
+                            <h3 class="skills__name">Photoshop</h3>
+                            <span class="skills__subtitle">Basic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Experience & education</span>
+            <div class="qualification__container container grid section__border">
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-pencil-ruler-2-line"></i> Education
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Master in Web Developer
+                            </h3>
+
+                            <span class="qualification__country">MITA - Academy</span>
+                            <span class="qualification__year">2021-Present</span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__name">
+                                Computer Literacy
+                            </h3>
+
+                            <span class="qualification__country">IT Center - Samarkand</span>
+                            <span class="qualification__year">2021-2022</span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__name">
+                                Computer Engineer
+                            </h3>
+
+                            <span class="qualification__country">MITA - Academy</span>
+                            <span class="qualification__year">2020 - 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-building-line"></i> Work
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Frontend Developer
+                            </h3>
+
+                            <span class="qualification__country">Uzbekistan</span>
+                            <span class="qualification__year">2022-Present</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                Software Engineer
+                            </h3>
+
+                            <span class="qualification__country">Uzbekistan</span>
+                            <span class="qualification__year">2022-Present</span>
+                        </div>
+                        <!-- <div>
+                            <h3 class="qualification__name">
+                                Graphic Designer
+                            </h3>
+
+                            <span class="qualification__country">Uzbekistan</span>
+                            <span class="qualification__year">2022-Present</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+        </section>
+
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What i offer</span>
+
+            <div class="services__container container grid section__border">
+                <div class="services__card">
+                    <i class="ri-code-s-slash-line"></i>
+
+                    <h2 class="services__title">
+                        A Short Time
+                    </h2>
+
+                    <p class="services__description">
+                        Services that provides the best quality and at
+                        the request of the client, with professional
+                        work and customer support.
+                    </p>
+
+                    <div class="services__border"></div>
+                </div>
+                <div class="services__card">
+                    <i class="ri-device-line"></i>
+
+                    <h2 class="services__title">
+                        Responsive
+                    </h2>
+
+                    <p class="services__description">
+                        Services that provides the best quality and at
+                        the request of the client, with professional
+                        work and customer support.
+                    </p>
+
+                    <div class="services__border"></div>
+                </div>
+                <div class="services__card">
+                    <i class="ri-add-line"></i>
+
+                    <h2 class="services__title">
+                        Supplements
+                    </h2>
+
+                    <p class="services__description">
+                        Services that provides the best quality and at
+                        the request of the client, with professional
+                        work and customer support.
+                    </p>
+
+                    <div class="services__border"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/gym.png" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">GYM</span>
+                                <h1 class="projects__title">Healthy Life</h1>
+
+                                <a href="https://mshukrulloyev.uz/projects/gym/" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/vtc.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">Sam VTS</span>
+                                <h1 class="projects__title">Big site</h1>
+
+                                <a href="https://mshukrulloyev.uz/projects/SAM_VTS/" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/magazine.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">Magazine</span>
+                                <h1 class="projects__title">Modern Website</h1>
+
+                                <a href="https://mshukrulloyev.uz/projects/magazine/" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/mita.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">MITA - demo</span>
+                                <h1 class="projects__title">Modern Website</h1>
+
+                                <a href="https://mshukrulloyev.uz/projects/mita/" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My client saying</span>
+
+            <div class="container section__border">
+                <div class="testimonial__container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                "Working with Muhammadali is to give a good impression, I carry out my project at a good
+                                cost,
+                                with excellent quality and attention.
+                                Great service and recommended."
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name">Klay Harris</h3>
+                                <span class="testimonial__subtitle">Client</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                "Working with Muhammadali is to give a good impression, I carry out my project at a good
+                                cost,
+                                with excellent quality and attention.
+                                Great service and recommended."
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name">Mary Lens</h3>
+                                <span class="testimonial__subtitle">Client</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                "Working with Muhammadali is to give a good impression, I carry out my project at a good
+                                cost,
+                                with excellent quality and attention.
+                                Great service and recommended."
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name">Anna Chel</h3>
+                                <span class="testimonial__subtitle">Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/img/shape-wawes.svg" alt="testomonial image" class="testimonial__img">
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i> Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">mshukrulloyev2021@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">+998904690506</span>
+
+                            <a href="#" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">Telegram</span>
+                            <span class="contact__data-info">@mshukrulloyev</span>
+
+                            <a href="https://t.me/mshukrulloyev" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line">Write me your project</i>
+                    </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" required placeholder="Write your name"
+                                class="contact__form-input" id="contact-name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">E-mail</label>
+                            <input type="email" name="user_email" required placeholder="Write your email"
+                                class="contact__form-input" id="contact-email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="user_project" placeholder="Write your project" id="contact-project"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Muhammadali</h1>
+            <p>Frontend Developer</p>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://t.me/mshukrulloyev" target="_blank" class="footer__social-link">
+                    <i class="ri-telegram-line"></i>
+                </a>
+                <a href="https://github.com/mshukrulloyev" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="#contact" class="footer__social-link">
+                    <i class="ri-mail-line"></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Copyright Muhammadali. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
