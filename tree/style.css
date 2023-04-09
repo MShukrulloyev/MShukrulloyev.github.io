@@ -181,11 +181,11 @@ header button {
     font-family: 'Vollkorn', serif;
     padding: 20px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     color: var(--black);
     font-weight: 500;
     font-size: 25.008px;
-    line-height: 31px;
+    /* line-height: 31px; */
     gap: 6px;
 }
 
@@ -199,6 +199,7 @@ header button {
 }
 
 .services_flex-box svg {
+    margin-top: 7px;
     transition: all .2s;
 }
 
@@ -608,6 +609,10 @@ footer {
 .icons {
     display: flex;
     gap: 25px;
+    color: var(--green);
+}
+
+.icons a {
     color: var(--green);
 }
 
