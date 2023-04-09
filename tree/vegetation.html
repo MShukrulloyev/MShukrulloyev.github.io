@@ -19,7 +19,8 @@
             <a href="index.html">
                 <img src="img/logo.svg" class="logo" alt="logo">
             </a>
-            <ul>
+            <ul id="menu">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -42,6 +43,7 @@
                     <a href="faq.html">FAQ</a>
                 </li>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </div>
     </nav>
 
@@ -152,6 +154,9 @@
         </div>
     </footer>
 
+    <script src="scrollreveal.min.js"></script>
+    <script src="animation.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
