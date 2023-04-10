@@ -78,12 +78,9 @@ header {
     height: 864px;
     background-image: url("img/main.jpg");
     /* background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("img/main.jpg"); */
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
     background-size: cover;
-    -moz-background-size: cover;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
