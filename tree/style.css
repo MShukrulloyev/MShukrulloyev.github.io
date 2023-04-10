@@ -1044,4 +1044,8 @@ footer {
     nav ul {
         width: 100%;
     }
+
+    header {
+        height: 1000vh;
+    }
 }
